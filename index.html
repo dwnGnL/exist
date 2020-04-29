@@ -20,10 +20,14 @@
     <meta name="theme-color" content="#ffffff">
     <link href="assets/template/fontawesome/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/template/css/style.min.css">
+    <link rel="stylesheet" href="assets/template/css/preload.css">
+
    
 </head>
-<body>
-
+<body class="loading">
+    <div class="preload">
+        <div class="preload__icon"></div>
+      </div>
 <header class="header">
     <div class="container">
         <div class="row align-items-center">
@@ -980,6 +984,15 @@
 <script src="assets/template/js/jquery.mask.min.js"></script>
 <script src="assets/template/js/jquery.validate.min.js"></script>
 <script src="assets/template/js/script.min.js"></script>
+<script>
+    $(document).ready(()=>{
+        setTimeout(()=>{
+        document.body.classList.remove('loading');
+        },1000);
+
+    })
+   
+    </script>
 <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
      <script>
     ymaps.ready(init);

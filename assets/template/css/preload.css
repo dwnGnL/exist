@@ -1,0 +1,105 @@
+/* preload */
+.preload {
+    background: linear-gradient(90deg, #fc1a22 51.5%, #000 48.5%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: none;
+  }
+  
+  body.loading {
+    overflow: hidden;
+  }
+  
+  body.loading .preload {
+    display: block;
+  }
+  
+  .preload__icon {
+    position: absolute;
+    left: calc(50% - 10vw);
+    top: calc(50% - 4vw);
+    width: 20vw;
+    height: 8vw;
+    background: url(../img/logo.png) center no-repeat;
+    background-size: contain;
+  
+    -webkit-animation: preloading .8s linear infinite alternate;
+    -moz-animation: preloading .8s linear infinite alternate;
+    -ms-animation: preloading .8s linear infinite alternate;
+    -o-animation: preloading .8s linear infinite alternate;
+    animation: preloading .8s linear infinite alternate;
+  }
+  
+  
+  /* animation */
+  @-webkit-keyframes preloading {
+    0% {
+      transform: scale(.8);
+      opacity: .2;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes preloading {
+    0% {
+      transform: scale(.8);
+      opacity: .2;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @-ms-keyframes preloading {
+    0% {
+      transform: scale(.8);
+      opacity: .2;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes preloading {
+    0% {
+      transform: scale(.8);
+      opacity: .2;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes preloading {
+    0% {
+      transform: scale(.8);
+      opacity: .2;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  
+  @media screen and (max-width: 756px) {
+    .preload__icon {
+      left: calc(50% - 20vw);
+      top: calc(50% - 7.5vw);
+      width: 40vw;
+      height: 15vw;
+    }
+  }
