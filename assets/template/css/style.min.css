@@ -13744,3 +13744,19 @@ body {
 .colors-list__color.colors-list__color--orange:before {
     background-color: orange;
 }
+
+.emoji {
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: baseline;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    border: 0;
+}
+
+.emoji-spritesheet-2 {
+    background-size: 594px 126px;
+    background-image: url(../img/emojisprite_2.png);
+}
