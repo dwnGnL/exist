@@ -22,7 +22,7 @@
     top: calc(50% - 4vw);
     width: 20vw;
     height: 8vw;
-    background: url(../img/logo.png) center no-repeat;
+    background: url(../img/logo.jpeg) center no-repeat;
     background-size: contain;
   
     -webkit-animation: preloading .8s linear infinite alternate;
