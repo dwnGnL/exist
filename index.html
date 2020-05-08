@@ -1513,17 +1513,17 @@
             var additional = ""
             for(var i=0;i<=6;i++){
                 if(tar.additionally[i].checked){
-                    additional+=`${tar.additionally[i].value}  ${document.querySelector(`input[name='additionally-${i+1}-count']`).value}
+                    additional+=`${tar.additionally[i].value}  ${document.querySelector(`input[name='additionally-${i+1}-count']`).value},
                     
                     `
                 }
             }
             text = `
-       ФИО:${tar.name.value}
-       Телефон:${tar.phone.value}
-       Адресс:${tar.address.value}
-       Машина:"Название=${tar.carBrand.value} год=${tar.year.value}"
-       Подробно:"цвет-1=${tar.color.value} цвет-2=${tar.borderColor.value}  дополнительно=${additional}"
+       ФИО:${tar.name.value};
+       Телефон:${tar.phone.value};
+       Адресс:${tar.address.value};
+       Машина:"Название=${tar.carBrand.value}, год=${tar.year.value}";
+       Подробно:"цвет-1=${tar.color.value}, цвет-2=${tar.borderColor.value}, дополнительно=${additional}";
        `
 
 
