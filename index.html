@@ -36,8 +36,10 @@
                 <div class="col-12">
                     <ul class="header-navigation">
                         <li class="header-navigation__item">
-                            <a href="exzist_default.html" class="header__logo-link"><img
+                            <a href="index.html.html" class="header__logo-link"><img
                                     src="assets/template/img/logo.jpeg" width=500 alt="ExzistPro" class="header__logo"></a>
+                                    
+
                         </li>
 
                         <li class="header-navigation__item">
@@ -1012,15 +1014,15 @@
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col-sm-6">
+                                    <div class="col-sm-6">
                                     <div class="form-order__group">
                                         <div class="form-order__car-model-wrap">
-                                            <select id="select-car-model" required name="car-model" class="form-order__input form-order__input--select form-order__select form-order__input--car" disabled>
+                                            <select id="select-car-model" required name="carModel" class="form-order__input form-order__input--select form-order__select form-order__input--car" disabled>
                                                 <option value="Не выбрано" selected disabled>Модель авто</option>
                                             </select>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 
                                     <div class="col-12">
                                         <div class="form-order__group mb-0">
@@ -1517,7 +1519,7 @@
                 }
             }
             text = `
-       ФИО:${tar.name.value}---------- Телефон:${tar.phone.value} ---------- Адресс:${tar.address.value} ---------- Машина:"Название=${tar.carBrand.value} год=${tar.year.value}" ---------- Подробно:"цвет коврика=${tar.color.value}, цвет оконтовки=${tar.borderColor.value}, дополнительно=${additional}"
+       ФИО:${tar.name.value}---------- Телефон:${tar.phone.value} ---------- Адресс:${tar.address.value} ---------- Машина:"Название=${tar.carBrand.value} Модель=${tar.carModel.value} год=${tar.year.value}" ---------- Подробно:"цвет коврика=${tar.color.value}, цвет оконтовки=${tar.borderColor.value}, дополнительно=${additional}"
        `
 
 
